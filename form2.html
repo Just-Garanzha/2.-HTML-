@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+Завдання 2
+<form action="/signup" method="POST">
+  <p>
+<label>Логін:</label>
+<input type="text">
+  </p>
+  <p>
+    <label>Пароль:</label>
+    <input type="password"name="password">
+</p>
+  <p>
+<label>Повторіть пароль:</label>
+<input type="password"name="password confirm">
+</p>
+  <p>
+<label>Стать:</label>
+<label>
+      <input type="radio" name="title" value="mr"> чоловік </label>
+<label>
+      <input type="radio" name="title" value="mrs"> жінка </label>
+</p>
+  <p>
+    <label>Вкажіть місто</label>
+    <select name="city">
+      <option>Житомир</option>
+      <option>Київ</option>
+      <option>Львів</option>
+    </select>
+  </p>
+<p>
+   <label>Інтереси:</label>
+  <label> <input type="radio"/> футбол </label>
+  <label> <input type="radio"/> шахи </label>
+  <label><input type="radio"/> малювання</label>
+  <label><input type="radio"> музика</label>
+  </p>
+  <p>
+    <button>Очистити</button>
+    <button>Відправити</button>
+  </p>
+</form>
+
+Завдання 2.1. Тег output
+<html lang="en">
+<body>
+ <div>
+   <form
+oninput="pounds.value=parseFloat (input.value)*2.205, c.value=parseFloat (input.value)/100">
+   <p><label>Введите ваш вес в кг:</label> <input type="number" id="input" value="63"/></p>
+   <p><label>Ваш вес в фунтах:</label> <output name="pounds"></output>
+   <p><label>Ваш вес в центнерах:</label> <output name="c"></output>
+  </form>
+ </div>
+
+ <div>
+</fieldset></form><form><fieldset>
+<p><label><strong>Введи 2 числа получи сумму</label></p>
+<input name="a" type="number" step="any" value="12"/> + <input name="b" type="number" step="any" value="4"/> = <output name="o">16</output>
+</fieldset>
+ 
+<div>
+    <p><label><strong>Сколько вы хотите заработать?</label></p>
+ <form
+ oninput="result.value=input.value">
+ <input type="range" min="0" max="100" id="input" value="58"><br>
+ <output name="result"></output>
+ </form>
+  </div>
+
+<fieldset>
+<p>
+  <label>Расчитай ЗП</label>
+  </p>
+  <label for="hours">Количество часов</label> <input type="number" min="0" id="hours" name="hours" value="10" /></p>
+<p><label for="rate">Ставка </label> <span>&pound;</span><input type="number" min="0" id="rate" name="rate" value="20"/></p>
+<p><label for="vat">Налог</label> <input type="number" min="0" id="vat" value="0.20" name="vat" /></p>
+<p>Зарплата всего <strong>грн<output name="amount" for="hours rate vat"> 240</output></strong></p>
+</form>
+</fieldset>
+</p>
+  <p>
+    <button>
+      Поехали
+    </button>
+    <button>
+      Чисто
+    </button>
+
+
+<div>
+    <p><label><strong>Сколько вы хотите заработать?</label></p>
+ <form
+ oninput="result.value=input.value">
+ <input type="range" min="0" max="100" id="input" value="58"><br>
+ <output name="result"></output>
+ </form>
+  </div>
+  </p>
+</html>
